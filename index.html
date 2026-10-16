@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Icon Display</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-default">
+  <div class="card">
+    <header class="card-header">
+      <h1>Weather Viewer</h1>
+      <p class="subtitle">Select a weather condition to see details</p>
+    </header>
+
+    <!-- Condition Selector -->
+    <div class="select-wrapper">
+      <label for="weather-select" class="visually-hidden">Choose weather:</label>
+      <select id="weather-select">
+        <option value="" disabled selected>-- Choose a weather condition --</option>
+        <option value="sunny">Sunny</option>
+        <option value="cloudy">Cloudy</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowy">Snowy</option>
+        <option value="thunderstorm">Thunderstorm</option>
+      </select>
+    </div>
+
+    <!-- Weather Display Card -->
+    <div id="weather-display" class="display-box">
+      <div id="weather-icon" class="icon-container">☀️</div>
+      <h2 id="weather-title">Select a Condition</h2>
+      <p id="weather-description">Pick an option above to preview the current weather state.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
